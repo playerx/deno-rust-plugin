@@ -36,3 +36,7 @@ MacBook Pro (Retina, 15-inch, Mid 2014)
 | Avg               | Fastest          |
 | ----------------- | ---------------- |
 | 0.011ms (10989ns) | 0.007ms (7237ns) |
+
+## Related
+
+[nodejs-cpp-binding](https://github.com/playerx/nodejs-cpp-binding)
