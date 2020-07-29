@@ -33,9 +33,9 @@ MacBook Pro (Retina, 15-inch, Mid 2014)
 **Result:**
 1 custom (sync) op call duration
 
-| Avg               | Fastest          |
-| ----------------- | ---------------- |
-| 0.011ms (10989ns) | 0.007ms (7237ns) |
+| Avg    | Fastest |
+| ------ | ------- |
+| 9820ns | 6649ns  |
 
 ## Related
 
