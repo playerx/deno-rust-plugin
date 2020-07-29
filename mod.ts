@@ -46,18 +46,18 @@ Deno.close(plugin)
 function banchSyncOp(op: number, sampleSize: number) {
   const data = new Uint8Array([1, 2, 3, 4])
 
-  const results = new Array(sampleSize).fill(0).map(() => {
-    const startedAt = performance.now()
+  const startedAt = performance.now()
 
+  for (let i = 0; i < sampleSize; i++) {
     // @ts-ignore
     let response = Deno.core.dispatch(op, data)
+  }
 
-    return performance.now() - startedAt
-  })
+  const duration = performance.now() - startedAt
 
   return {
-    min: Math.min(...results),
-    avg: results.reduce((a, b) => a + b, 0) / results.length,
-    max: Math.max(...results),
+    min: NaN,
+    avg: duration / sampleSize,
+    max: NaN,
   }
 }
